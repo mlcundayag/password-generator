@@ -270,11 +270,7 @@ input[type=checkbox]{
 
   #criteria label:nth-child(n+3), #criteria input:nth-child(n+3) {
     margin-top: 20px;
-    padding: 1.2%;
-    font-size: 15px;
-  }
-
-  input[type=checkbox] {
-    transform: translate(0, 2px);
+    padding: 5%;
+    text-align: justify;
   }
 }
