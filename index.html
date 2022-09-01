@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
+
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+
         <div class="card-body">
           <textarea
             readonly
@@ -24,11 +26,33 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+
+        <div id="criteria">
+          <label for="length">Length</label>
+          <div class="slider">
+            <input type="range" id="length" value="8" min="8" max="128" oninput="document.getElementById('length-display').value=this.value" />
+            <input readonly type="text" value="8" maxlength="2" id="length-display" oninput="document.getElementById('length').value=this.value" />
+          </div>
+
+          <label for="lowercase">Lowercase</label>
+          <input type="checkbox" id="lowercase" checked />
+
+          <label for="uppercase">Uppercase</label>
+          <input type="checkbox" id="uppercase" checked />
+          
+          <label for="numbers">Numbers</label>
+          <input type="checkbox" id="numbers" checked />
+
+          <label for="symbols">Symbols</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
+          <button id="copy" class="btn">Copy</button>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
