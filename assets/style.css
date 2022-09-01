@@ -233,9 +233,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 input[type=checkbox]{
   accent-color: #D8F316;
+  margin-left: -0.5rem;
 }
 
-@media (max-width: 690px) {
+@media screen and (max-width: 690px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -245,10 +246,35 @@ input[type=checkbox]{
   #password {
     font-size: 1rem;
   }
+  
+  #criteria {
+    display: block;
+    text-align: center;
+  }
+
+  #criteria label:nth-child(n+3), #criteria input:nth-child(n+3) {
+    margin-top: 20px;
+    padding: 1.2%;
+  }
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+
+  #criteria {
+    display: block;
+    text-align: center;
+  }
+
+  #criteria label:nth-child(n+3), #criteria input:nth-child(n+3) {
+    margin-top: 20px;
+    padding: 1.2%;
+    font-size: 15px;
+  }
+
+  input[type=checkbox] {
+    transform: translate(0, 2px);
   }
 }
