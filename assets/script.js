@@ -35,8 +35,8 @@ generateBtn.addEventListener("click", () => {
   addLowerletters.checked ? (characters += lowerLetters) : "";
   addNumbers.checked ? (characters += numbers) : "";
   addSymbols.checked ? (characters += symbols) : "";
-  passwordTxt.value = generatePassword(length.value, characters);
-  if (addUpperletters.checked === false && 
+  passwordTxt.value = generatePassword(length.value, characters); 
+  if (addUpperletters.checked === false && //Add alert when all boxes are unchecked
       addLowerletters.checked === false && 
       addNumbers.checked === false && 
       addSymbols.checked === false

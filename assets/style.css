@@ -97,6 +97,7 @@ button[disabled] {
   float: right;
 }
 
+/*sets style for text-area where password generator appear */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -124,12 +125,14 @@ textarea::placeholder{
   color: #ffffff;
 }
 
+/*set styles for criteria*/
 #criteria {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/*set style for the slider picker for length*/
 input[type=range] {
   -webkit-appearance: none;
   margin: 18px 2px;
@@ -194,12 +197,14 @@ input[type=range]::-ms-track {
   border-width: 16px 0;
   color: transparent;
 }
+
 input[type=range]::-ms-fill-lower {
   background: #D8F316;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
+
 input[type=range]::-ms-fill-upper {
   background: #e4f661;
   border: 0.2px solid #010101;
@@ -216,9 +221,11 @@ input[type=range]::-ms-thumb {
   background: #ffffff;
   cursor: pointer;
 }
+
 input[type=range]:focus::-ms-fill-lower {
   background: #D8F316;
 }
+
 input[type=range]:focus::-ms-fill-upper {
   background: #D8F316;
 }
@@ -231,11 +238,13 @@ input[type=range]:focus::-ms-fill-upper {
   width: 35px;
 }
 
+/*settings to change color of checkboxes*/
 input[type=checkbox]{
   accent-color: #D8F316;
   margin-left: -0.5rem;
 }
 
+/*change media screen settings*/
 @media screen and (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -252,12 +261,14 @@ input[type=checkbox]{
     text-align: center;
   }
 
+  /*Settings to target specific label and input*/
   #criteria label:nth-child(n+3), #criteria input:nth-child(n+3) {
     margin-top: 20px;
     padding: 1.2%;
   }
 }
 
+/*change media screen settings for phone screen*/
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
@@ -269,8 +280,8 @@ input[type=checkbox]{
   }
 
   #criteria label:nth-child(n+3), #criteria input:nth-child(n+3) {
-    margin-top: 20px;
-    padding: 5%;
+    padding: 3%;
     text-align: justify;
+    font-size: 15px;
   }
 }
